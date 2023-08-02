@@ -1,3 +1,8 @@
+" vim plugin
+call plug#begin()
+Plug 'neomake/neomake'
+call plug#end()
+
 " Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.

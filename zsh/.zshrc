@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-#export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/home/jam/.local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -101,4 +100,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -al"
-alias szsh="source .zshrc"
+alias szsh="source ~/.zshrc"
+alias stmux="source ~/.tmux.conf"
+
+host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
+export https_proxy="socks5://$host_ip:7890"
+export http_proxy="http://$host_ip:7890"
+export all_proxy="socks5://$host_ip:7890"
+

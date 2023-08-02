@@ -118,11 +118,13 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/home/jam/.local/bin
-host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
-export https_proxy="socks5://$host_ip:7890"
-export http_proxy="http://$host_ip:7890"
-export all_proxy="socks5://$host_ip:7890"
 export PATH=/home/jam/bin:$PATH
+
+#host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
+#export https_proxy="socks5://$host_ip:7890"
+#export http_proxy="http://$host_ip:7890"
+#export all_proxy="socks5://$host_ip:7890"
+
 alias sbh="source ~/.bashrc"
 
 
