@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+# clash
+wget -U "Mozilla/6.0" -O ~/.config/clash/config.yaml "https://v1.v2ai.top/link/Ait4PMTKyESDdqIT?clash=1"
+
+# hysteria
+wget -t 2 -O ~/sci/hysteria/config.json https://gitlab.com/free9999/ipupdate/-/raw/master/hysteria/config.json
+wget -t 2 -O ~/sci/hysteria/config.json https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria/1/config.json

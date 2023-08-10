@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# 指定要杀死的进程名
+process_name="clash"
+
+# 查找进程并杀死
+pids=$(pgrep "$process_name")
+
+if [ -z "$pids" ]; then
+    echo "没有找到进程 $process_name."
+else
+    for pid in $pids; do
+        echo "正在杀死进程 $pid..."
+        kill "$pid"
+    done
+fi
+
+# 关闭代理
+unset http_proxy
+unset https_proxy
