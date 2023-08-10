@@ -26,4 +26,4 @@ cp ~/.vimrc ~/dotfiles/vim/
 cp -r ~/.config/nvim/ ~/dotfiles/nvim/
 
 # sci
-cp -r ~/sci/ ~/dotfiles/sci/
+cp -r ~/sci/ ~/dotfiles/
