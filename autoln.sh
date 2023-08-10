@@ -15,4 +15,13 @@ cp vim/.vimrc ~/.vimrc
 cp -r ./vim/.vim ~/.vim
 
 # nvim
-cp -r nvim ~
+cp -r nvim ~/.config
+
+# git
+cp .gitconfig ~
+
+# profile
+cp .profile ~
+
+# sci
+cp sci ~
