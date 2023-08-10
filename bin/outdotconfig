@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# profile
+cp ~/dotfiles/profile/.profile ~/.profile
+
+# bash
+cp ~/dotfiles/bash/.bashrc ~/.bashrc
+
+# zsh
+cp ~/dotfiles/zsh/.zshrc ~/.zshrc
+cp -r ~/dotfiles/zsh/.zsh ~
+
+# git
+cp ~/dotfiles/git/.gitconfig ~/.gitconfig
+
+# tmux
+cp ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+
+# vim
+cp ~/dotfiles/vim/.vimrc ~/.vimrc
+
+# nvim
+cp -r ~/dotfiles/nvim ~/.config/
+
+# sci
+cp -r ~/dotfiles/sci ~

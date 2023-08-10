@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# copy dotfiles from ~ to dotfiles/
+
+# profile
+cp ~/.profile ~/dotfiles/profile/
+
+# bash
+cp ~/.bashrc ~/dotfiles/bash/
+
+# zsh
+cp ~/.zshrc ~/dotfiles/zsh/
+cp -r ~/.zsh/ ~/dotfiles/zsh/
+find ~/dotfiles/zsh/.zsh -type d -name ".git" -exec dirname {} \; | xargs rm -rf
+
+# git
+cp ~/.gitconfig ~/dotfiles/git/
+
+# tmux
+cp ~/.tmux.conf ~/dotfiles/tmux/
+
+# vim
+cp ~/.vimrc ~/dotfiles/vim/
+
+# nvim
+cp -r ~/.config/nvim/ ~/dotfiles/nvim/
+
+# sci
+cp -r ~/sci/ ~/dotfiles/sci/
