@@ -4,13 +4,13 @@
 process_name="clash"
 
 # 查找进程并杀死
-pids=$(pgrep "$process_name")
+pids=$(pgrep -x "$process_name")
 
 if [ -z "$pids" ]; then
     echo "没有找到进程 $process_name."
 else
     for pid in $pids; do
-        echo "正在杀死进程 $pid..."
+        echo "正在杀死进程 $pid"
         kill "$pid"
     done
 fi
