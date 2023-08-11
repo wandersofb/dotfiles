@@ -13,7 +13,7 @@ if pgrep -x "$process_name" > /dev/null ; then
     echo "进程 $process_name 已经在运行中，无法重复运行."
 else
     # 运行进程并将其放入后台
-    ./$process_name  &
+    ./$process_name > /dev/null &
     echo "进程 $process_name 已在后台运行."
 fi
 
@@ -22,8 +22,8 @@ fi
 export http_proxy="http://127.0.0.1:1081"
 export https_proxy="http://127.0.0.1:1081"
 # sock5
-export http_proxy="http://127.0.0.1:1080"
-export https_proxy="http://127.0.0.1:1080"
+# export http_proxy="http://127.0.0.1:1080"
+# export https_proxy="http://127.0.0.1:1080"
 
 
 cd "$current_directory" || exit

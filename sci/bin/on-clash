@@ -18,7 +18,11 @@ else
 fi
 
 # 挂起端口
+# http
 export http_proxy="http://127.0.0.1:7890"
 export https_proxy="http://127.0.0.1:7890"
+# sock5
+# export http_proxy="http://127.0.0.1:7891"
+# export https_proxy="http://127.0.0.1:7891"
 
 cd "$current_directory" || exit
